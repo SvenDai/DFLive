@@ -13,7 +13,27 @@
 		14CDD5471F653AA800D5FDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD5451F653AA800D5FDED /* Main.storyboard */; };
 		14CDD5491F653AA800D5FDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD5481F653AA800D5FDED /* Assets.xcassets */; };
 		14CDD54C1F653AA800D5FDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD54A1F653AA800D5FDED /* LaunchScreen.storyboard */; };
-		14CDD5541F653C2D00D5FDED /* DFViewController in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD5531F653C2D00D5FDED /* DFViewController */; };
+		14CDD5571F65481800D5FDED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5561F65481800D5FDED /* UIKit.framework */; };
+		14CDD5591F65486E00D5FDED /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5581F65486E00D5FDED /* VideoToolbox.framework */; };
+		14CDD55B1F65487700D5FDED /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD55A1F65487700D5FDED /* CoreVideo.framework */; };
+		14CDD55D1F65488600D5FDED /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD55C1F65488600D5FDED /* AudioToolbox.framework */; };
+		14CDD55F1F65489000D5FDED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD55E1F65489000D5FDED /* AVFoundation.framework */; };
+		14CDD5611F6548AB00D5FDED /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5601F6548AB00D5FDED /* CoreMedia.framework */; };
+		14CDD5631F6548B400D5FDED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5621F6548B400D5FDED /* CoreGraphics.framework */; };
+		14CDD5651F6548BD00D5FDED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5641F6548BD00D5FDED /* QuartzCore.framework */; };
+		14CDD5671F6548CB00D5FDED /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5661F6548CB00D5FDED /* OpenGLES.framework */; };
+		14CDD5691F6548D800D5FDED /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5681F6548D800D5FDED /* MediaPlayer.framework */; };
+		14CDD56B1F65490300D5FDED /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD56A1F65490300D5FDED /* MobileCoreServices.framework */; };
+		14CDD56D1F65491100D5FDED /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD56C1F65491100D5FDED /* libbz2.tbd */; };
+		14CDD56F1F65491900D5FDED /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD56E1F65491900D5FDED /* libz.tbd */; };
+		14CDD5711F65492300D5FDED /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5701F65492300D5FDED /* libstdc++.tbd */; };
+		14CDD5731F65494900D5FDED /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CDD5721F65494900D5FDED /* IJKMediaFramework.framework */; };
+		14CDD57F1F6555B500D5FDED /* DFLiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD5761F6555B500D5FDED /* DFLiveListViewController.m */; };
+		14CDD5801F6555B500D5FDED /* DFMainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD5781F6555B500D5FDED /* DFMainNavViewController.m */; };
+		14CDD5811F6555B500D5FDED /* DFMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD57A1F6555B500D5FDED /* DFMainTabBarViewController.m */; };
+		14CDD5821F6555B500D5FDED /* DFPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD57C1F6555B500D5FDED /* DFPlayerViewController.m */; };
+		14CDD5831F6555B500D5FDED /* DFSelfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD57E1F6555B500D5FDED /* DFSelfInfoViewController.m */; };
+		9CC5F74BBC3ABE60542678A2 /* Pods_DFLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +47,35 @@
 		14CDD5481F653AA800D5FDED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14CDD54B1F653AA800D5FDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14CDD54D1F653AA800D5FDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14CDD5531F653C2D00D5FDED /* DFViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DFViewController; sourceTree = "<group>"; };
 		14CDD5551F653C3D00D5FDED /* DFLive-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DFLive-prefix.pch"; sourceTree = "<group>"; };
+		14CDD5561F65481800D5FDED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14CDD5581F65486E00D5FDED /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		14CDD55A1F65487700D5FDED /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		14CDD55C1F65488600D5FDED /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		14CDD55E1F65489000D5FDED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		14CDD5601F6548AB00D5FDED /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		14CDD5621F6548B400D5FDED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14CDD5641F6548BD00D5FDED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14CDD5661F6548CB00D5FDED /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		14CDD5681F6548D800D5FDED /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		14CDD56A1F65490300D5FDED /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		14CDD56C1F65491100D5FDED /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		14CDD56E1F65491900D5FDED /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		14CDD5701F65492300D5FDED /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		14CDD5721F65494900D5FDED /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		14CDD5751F6555B500D5FDED /* DFLiveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLiveListViewController.h; sourceTree = "<group>"; };
+		14CDD5761F6555B500D5FDED /* DFLiveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLiveListViewController.m; sourceTree = "<group>"; };
+		14CDD5771F6555B500D5FDED /* DFMainNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMainNavViewController.h; sourceTree = "<group>"; };
+		14CDD5781F6555B500D5FDED /* DFMainNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMainNavViewController.m; sourceTree = "<group>"; };
+		14CDD5791F6555B500D5FDED /* DFMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMainTabBarViewController.h; sourceTree = "<group>"; };
+		14CDD57A1F6555B500D5FDED /* DFMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMainTabBarViewController.m; sourceTree = "<group>"; };
+		14CDD57B1F6555B500D5FDED /* DFPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPlayerViewController.h; sourceTree = "<group>"; };
+		14CDD57C1F6555B500D5FDED /* DFPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPlayerViewController.m; sourceTree = "<group>"; };
+		14CDD57D1F6555B500D5FDED /* DFSelfInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSelfInfoViewController.h; sourceTree = "<group>"; };
+		14CDD57E1F6555B500D5FDED /* DFSelfInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSelfInfoViewController.m; sourceTree = "<group>"; };
+		94FFBF165AF4A8A5C6D7C895 /* Pods-DFLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.debug.xcconfig"; sourceTree = "<group>"; };
+		C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E491054AD506631F2590C4B2 /* Pods-DFLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +83,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CDD5711F65492300D5FDED /* libstdc++.tbd in Frameworks */,
+				14CDD56F1F65491900D5FDED /* libz.tbd in Frameworks */,
+				14CDD56D1F65491100D5FDED /* libbz2.tbd in Frameworks */,
+				14CDD5731F65494900D5FDED /* IJKMediaFramework.framework in Frameworks */,
+				14CDD56B1F65490300D5FDED /* MobileCoreServices.framework in Frameworks */,
+				14CDD5691F6548D800D5FDED /* MediaPlayer.framework in Frameworks */,
+				14CDD5671F6548CB00D5FDED /* OpenGLES.framework in Frameworks */,
+				14CDD5651F6548BD00D5FDED /* QuartzCore.framework in Frameworks */,
+				14CDD5631F6548B400D5FDED /* CoreGraphics.framework in Frameworks */,
+				14CDD5611F6548AB00D5FDED /* CoreMedia.framework in Frameworks */,
+				14CDD55F1F65489000D5FDED /* AVFoundation.framework in Frameworks */,
+				14CDD55D1F65488600D5FDED /* AudioToolbox.framework in Frameworks */,
+				14CDD55B1F65487700D5FDED /* CoreVideo.framework in Frameworks */,
+				14CDD5591F65486E00D5FDED /* VideoToolbox.framework in Frameworks */,
+				14CDD5571F65481800D5FDED /* UIKit.framework in Frameworks */,
+				9CC5F74BBC3ABE60542678A2 /* Pods_DFLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14178FC109968DE18C0D79B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94FFBF165AF4A8A5C6D7C895 /* Pods-DFLive.debug.xcconfig */,
+				E491054AD506631F2590C4B2 /* Pods-DFLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		14CDD5301F653AA800D5FDED = {
 			isa = PBXGroup;
 			children = (
 				14CDD53B1F653AA800D5FDED /* DFLive */,
 				14CDD53A1F653AA800D5FDED /* Products */,
+				14178FC109968DE18C0D79B2 /* Pods */,
+				2BDAEFECA18E57016AA7ACBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +135,7 @@
 		14CDD53B1F653AA800D5FDED /* DFLive */ = {
 			isa = PBXGroup;
 			children = (
-				14CDD5531F653C2D00D5FDED /* DFViewController */,
+				14CDD5741F6555B500D5FDED /* DFViewController */,
 				14CDD53F1F653AA800D5FDED /* AppDelegate.h */,
 				14CDD5401F653AA800D5FDED /* AppDelegate.m */,
 				14CDD5421F653AA800D5FDED /* ViewController.h */,
@@ -84,6 +158,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		14CDD5741F6555B500D5FDED /* DFViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14CDD5751F6555B500D5FDED /* DFLiveListViewController.h */,
+				14CDD5761F6555B500D5FDED /* DFLiveListViewController.m */,
+				14CDD5771F6555B500D5FDED /* DFMainNavViewController.h */,
+				14CDD5781F6555B500D5FDED /* DFMainNavViewController.m */,
+				14CDD5791F6555B500D5FDED /* DFMainTabBarViewController.h */,
+				14CDD57A1F6555B500D5FDED /* DFMainTabBarViewController.m */,
+				14CDD57B1F6555B500D5FDED /* DFPlayerViewController.h */,
+				14CDD57C1F6555B500D5FDED /* DFPlayerViewController.m */,
+				14CDD57D1F6555B500D5FDED /* DFSelfInfoViewController.h */,
+				14CDD57E1F6555B500D5FDED /* DFSelfInfoViewController.m */,
+			);
+			path = DFViewController;
+			sourceTree = "<group>";
+		};
+		2BDAEFECA18E57016AA7ACBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14CDD5721F65494900D5FDED /* IJKMediaFramework.framework */,
+				14CDD5701F65492300D5FDED /* libstdc++.tbd */,
+				14CDD56E1F65491900D5FDED /* libz.tbd */,
+				14CDD56C1F65491100D5FDED /* libbz2.tbd */,
+				14CDD56A1F65490300D5FDED /* MobileCoreServices.framework */,
+				14CDD5681F6548D800D5FDED /* MediaPlayer.framework */,
+				14CDD5661F6548CB00D5FDED /* OpenGLES.framework */,
+				14CDD5641F6548BD00D5FDED /* QuartzCore.framework */,
+				14CDD5621F6548B400D5FDED /* CoreGraphics.framework */,
+				14CDD5601F6548AB00D5FDED /* CoreMedia.framework */,
+				14CDD55E1F65489000D5FDED /* AVFoundation.framework */,
+				14CDD55C1F65488600D5FDED /* AudioToolbox.framework */,
+				14CDD55A1F65487700D5FDED /* CoreVideo.framework */,
+				14CDD5581F65486E00D5FDED /* VideoToolbox.framework */,
+				14CDD5561F65481800D5FDED /* UIKit.framework */,
+				C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14CDD5501F653AA800D5FDED /* Build configuration list for PBXNativeTarget "DFLive" */;
 			buildPhases = (
+				911AF8B7DB6410125D5E31DC /* [CP] Check Pods Manifest.lock */,
 				14CDD5351F653AA800D5FDED /* Sources */,
 				14CDD5361F653AA800D5FDED /* Frameworks */,
 				14CDD5371F653AA800D5FDED /* Resources */,
+				80EB9138CAE531A030958DAD /* [CP] Embed Pods Frameworks */,
+				3A59DAA4FF66475CB7803D1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,13 +261,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				14CDD54C1F653AA800D5FDED /* LaunchScreen.storyboard in Resources */,
-				14CDD5541F653C2D00D5FDED /* DFViewController in Resources */,
 				14CDD5491F653AA800D5FDED /* Assets.xcassets in Resources */,
 				14CDD5471F653AA800D5FDED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A59DAA4FF66475CB7803D1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFLive/Pods-DFLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80EB9138CAE531A030958DAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFLive/Pods-DFLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		911AF8B7DB6410125D5E31DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14CDD5351F653AA800D5FDED /* Sources */ = {
@@ -159,6 +323,11 @@
 			files = (
 				14CDD5441F653AA800D5FDED /* ViewController.m in Sources */,
 				14CDD5411F653AA800D5FDED /* AppDelegate.m in Sources */,
+				14CDD5801F6555B500D5FDED /* DFMainNavViewController.m in Sources */,
+				14CDD5821F6555B500D5FDED /* DFPlayerViewController.m in Sources */,
+				14CDD5831F6555B500D5FDED /* DFSelfInfoViewController.m in Sources */,
+				14CDD5811F6555B500D5FDED /* DFMainTabBarViewController.m in Sources */,
+				14CDD57F1F6555B500D5FDED /* DFLiveListViewController.m in Sources */,
 				14CDD53E1F653AA800D5FDED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,12 +448,18 @@
 		};
 		14CDD5511F653AA800D5FDED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FFBF165AF4A8A5C6D7C895 /* Pods-DFLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 769S6729K7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DFLive/DFLive-prefix.pch";
 				INFOPLIST_FILE = DFLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.DFLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,12 +468,18 @@
 		};
 		14CDD5521F653AA800D5FDED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E491054AD506631F2590C4B2 /* Pods-DFLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 769S6729K7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DFLive/DFLive-prefix.pch";
 				INFOPLIST_FILE = DFLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.DFLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,6 +505,7 @@
 				14CDD5521F653AA800D5FDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

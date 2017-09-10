@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DFMainTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    DFMainTabBarViewController *mainTabBarVC = [[DFMainTabBarViewController alloc]init];
+    self.window.rootViewController = mainTabBarVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
