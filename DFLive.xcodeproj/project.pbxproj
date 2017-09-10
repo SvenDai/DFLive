@@ -13,6 +13,7 @@
 		14CDD5471F653AA800D5FDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD5451F653AA800D5FDED /* Main.storyboard */; };
 		14CDD5491F653AA800D5FDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD5481F653AA800D5FDED /* Assets.xcassets */; };
 		14CDD54C1F653AA800D5FDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD54A1F653AA800D5FDED /* LaunchScreen.storyboard */; };
+		14CDD5541F653C2D00D5FDED /* DFViewController in Resources */ = {isa = PBXBuildFile; fileRef = 14CDD5531F653C2D00D5FDED /* DFViewController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		14CDD5481F653AA800D5FDED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14CDD54B1F653AA800D5FDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14CDD54D1F653AA800D5FDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14CDD5531F653C2D00D5FDED /* DFViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DFViewController; sourceTree = "<group>"; };
+		14CDD5551F653C3D00D5FDED /* DFLive-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DFLive-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,11 @@
 		14CDD53B1F653AA800D5FDED /* DFLive */ = {
 			isa = PBXGroup;
 			children = (
+				14CDD5531F653C2D00D5FDED /* DFViewController */,
 				14CDD53F1F653AA800D5FDED /* AppDelegate.h */,
 				14CDD5401F653AA800D5FDED /* AppDelegate.m */,
 				14CDD5421F653AA800D5FDED /* ViewController.h */,
 				14CDD5431F653AA800D5FDED /* ViewController.m */,
-				14CDD5451F653AA800D5FDED /* Main.storyboard */,
-				14CDD5481F653AA800D5FDED /* Assets.xcassets */,
-				14CDD54A1F653AA800D5FDED /* LaunchScreen.storyboard */,
-				14CDD54D1F653AA800D5FDED /* Info.plist */,
 				14CDD53C1F653AA800D5FDED /* Supporting Files */,
 			);
 			path = DFLive;
@@ -74,6 +74,11 @@
 		14CDD53C1F653AA800D5FDED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14CDD5551F653C3D00D5FDED /* DFLive-prefix.pch */,
+				14CDD54D1F653AA800D5FDED /* Info.plist */,
+				14CDD5481F653AA800D5FDED /* Assets.xcassets */,
+				14CDD54A1F653AA800D5FDED /* LaunchScreen.storyboard */,
+				14CDD5451F653AA800D5FDED /* Main.storyboard */,
 				14CDD53D1F653AA800D5FDED /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14CDD54C1F653AA800D5FDED /* LaunchScreen.storyboard in Resources */,
+				14CDD5541F653C2D00D5FDED /* DFViewController in Resources */,
 				14CDD5491F653AA800D5FDED /* Assets.xcassets in Resources */,
 				14CDD5471F653AA800D5FDED /* Main.storyboard in Resources */,
 			);
@@ -276,6 +282,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 769S6729K7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DFLive/DFLive-prefix.pch";
 				INFOPLIST_FILE = DFLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.DFLive;
@@ -288,6 +296,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 769S6729K7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DFLive/DFLive-prefix.pch";
 				INFOPLIST_FILE = DFLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.DFLive;
