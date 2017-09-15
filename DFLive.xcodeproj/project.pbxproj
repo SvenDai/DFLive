@@ -33,6 +33,16 @@
 		14CDD5811F6555B500D5FDED /* DFMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD57A1F6555B500D5FDED /* DFMainTabBarViewController.m */; };
 		14CDD5821F6555B500D5FDED /* DFPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD57C1F6555B500D5FDED /* DFPlayerViewController.m */; };
 		14CDD5831F6555B500D5FDED /* DFSelfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CDD57E1F6555B500D5FDED /* DFSelfInfoViewController.m */; };
+		61C2C15F1F66661C004C4A82 /* DFCoverControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C15E1F66661C004C4A82 /* DFCoverControlView.m */; };
+		61C2C1621F666816004C4A82 /* DFLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1611F666816004C4A82 /* DFLoadingView.m */; };
+		61C2C1651F666ABC004C4A82 /* DFPortraitControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1641F666ABC004C4A82 /* DFPortraitControlView.m */; };
+		61C2C1681F666B11004C4A82 /* DFLandScapeControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1671F666B11004C4A82 /* DFLandScapeControlView.m */; };
+		61C2C16B1F666B3A004C4A82 /* DFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C16A1F666B3A004C4A82 /* DFPlayerControlView.m */; };
+		61C2C16E1F666B73004C4A82 /* DFVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C16D1F666B73004C4A82 /* DFVideoPlayerView.m */; };
+		61C2C1711F666CFF004C4A82 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1701F666CFF004C4A82 /* MMMaterialDesignSpinner.m */; };
+		61C2C17A1F67BB4B004C4A82 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1791F67BB4B004C4A82 /* UIColor+Hex.m */; };
+		61C2C17E1F6A235D004C4A82 /* DFPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C17D1F6A235D004C4A82 /* DFPlayerModel.m */; };
+		61C2C1811F6A2387004C4A82 /* DFPlayerStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1801F6A2387004C4A82 /* DFPlayerStatusModel.m */; };
 		9CC5F74BBC3ABE60542678A2 /* Pods_DFLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +83,27 @@
 		14CDD57C1F6555B500D5FDED /* DFPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPlayerViewController.m; sourceTree = "<group>"; };
 		14CDD57D1F6555B500D5FDED /* DFSelfInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSelfInfoViewController.h; sourceTree = "<group>"; };
 		14CDD57E1F6555B500D5FDED /* DFSelfInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSelfInfoViewController.m; sourceTree = "<group>"; };
+		61C2C15D1F66661C004C4A82 /* DFCoverControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCoverControlView.h; sourceTree = "<group>"; };
+		61C2C15E1F66661C004C4A82 /* DFCoverControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCoverControlView.m; sourceTree = "<group>"; };
+		61C2C1601F666816004C4A82 /* DFLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLoadingView.h; sourceTree = "<group>"; };
+		61C2C1611F666816004C4A82 /* DFLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLoadingView.m; sourceTree = "<group>"; };
+		61C2C1631F666ABC004C4A82 /* DFPortraitControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPortraitControlView.h; sourceTree = "<group>"; };
+		61C2C1641F666ABC004C4A82 /* DFPortraitControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPortraitControlView.m; sourceTree = "<group>"; };
+		61C2C1661F666B11004C4A82 /* DFLandScapeControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLandScapeControlView.h; sourceTree = "<group>"; };
+		61C2C1671F666B11004C4A82 /* DFLandScapeControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLandScapeControlView.m; sourceTree = "<group>"; };
+		61C2C1691F666B3A004C4A82 /* DFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPlayerControlView.h; sourceTree = "<group>"; };
+		61C2C16A1F666B3A004C4A82 /* DFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPlayerControlView.m; sourceTree = "<group>"; };
+		61C2C16C1F666B73004C4A82 /* DFVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFVideoPlayerView.h; sourceTree = "<group>"; };
+		61C2C16D1F666B73004C4A82 /* DFVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFVideoPlayerView.m; sourceTree = "<group>"; };
+		61C2C16F1F666CFF004C4A82 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		61C2C1701F666CFF004C4A82 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		61C2C1721F666E22004C4A82 /* DFPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPlayer.h; sourceTree = "<group>"; };
+		61C2C1781F67BB4B004C4A82 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		61C2C1791F67BB4B004C4A82 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		61C2C17C1F6A235D004C4A82 /* DFPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPlayerModel.h; sourceTree = "<group>"; };
+		61C2C17D1F6A235D004C4A82 /* DFPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPlayerModel.m; sourceTree = "<group>"; };
+		61C2C17F1F6A2387004C4A82 /* DFPlayerStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPlayerStatusModel.h; sourceTree = "<group>"; };
+		61C2C1801F6A2387004C4A82 /* DFPlayerStatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPlayerStatusModel.m; sourceTree = "<group>"; };
 		94FFBF165AF4A8A5C6D7C895 /* Pods-DFLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.debug.xcconfig"; sourceTree = "<group>"; };
 		C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E491054AD506631F2590C4B2 /* Pods-DFLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +166,7 @@
 		14CDD53B1F653AA800D5FDED /* DFLive */ = {
 			isa = PBXGroup;
 			children = (
+				61C2C15B1F66661C004C4A82 /* DFPlayer */,
 				14CDD5741F6555B500D5FDED /* DFViewController */,
 				14CDD53F1F653AA800D5FDED /* AppDelegate.h */,
 				14CDD5401F653AA800D5FDED /* AppDelegate.m */,
@@ -198,6 +230,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		61C2C15B1F66661C004C4A82 /* DFPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				61C2C17B1F6A2314004C4A82 /* Model */,
+				61C2C1741F67BA1A004C4A82 /* Kit */,
+				61C2C1721F666E22004C4A82 /* DFPlayer.h */,
+				61C2C15C1F66661C004C4A82 /* View */,
+			);
+			path = DFPlayer;
+			sourceTree = "<group>";
+		};
+		61C2C15C1F66661C004C4A82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61C2C15D1F66661C004C4A82 /* DFCoverControlView.h */,
+				61C2C15E1F66661C004C4A82 /* DFCoverControlView.m */,
+				61C2C1601F666816004C4A82 /* DFLoadingView.h */,
+				61C2C1611F666816004C4A82 /* DFLoadingView.m */,
+				61C2C1631F666ABC004C4A82 /* DFPortraitControlView.h */,
+				61C2C1641F666ABC004C4A82 /* DFPortraitControlView.m */,
+				61C2C1661F666B11004C4A82 /* DFLandScapeControlView.h */,
+				61C2C1671F666B11004C4A82 /* DFLandScapeControlView.m */,
+				61C2C1691F666B3A004C4A82 /* DFPlayerControlView.h */,
+				61C2C16A1F666B3A004C4A82 /* DFPlayerControlView.m */,
+				61C2C16C1F666B73004C4A82 /* DFVideoPlayerView.h */,
+				61C2C16D1F666B73004C4A82 /* DFVideoPlayerView.m */,
+				61C2C1701F666CFF004C4A82 /* MMMaterialDesignSpinner.m */,
+				61C2C16F1F666CFF004C4A82 /* MMMaterialDesignSpinner.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61C2C1741F67BA1A004C4A82 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				61C2C1781F67BB4B004C4A82 /* UIColor+Hex.h */,
+				61C2C1791F67BB4B004C4A82 /* UIColor+Hex.m */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		61C2C17B1F6A2314004C4A82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61C2C17C1F6A235D004C4A82 /* DFPlayerModel.h */,
+				61C2C17D1F6A235D004C4A82 /* DFPlayerModel.m */,
+				61C2C17F1F6A2387004C4A82 /* DFPlayerStatusModel.h */,
+				61C2C1801F6A2387004C4A82 /* DFPlayerStatusModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,7 +316,7 @@
 				TargetAttributes = {
 					14CDD5381F653AA800D5FDED = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 769S6729K7;
+						DevelopmentTeam = 485NBRU9KM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -321,14 +405,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C2C1681F666B11004C4A82 /* DFLandScapeControlView.m in Sources */,
 				14CDD5441F653AA800D5FDED /* ViewController.m in Sources */,
+				61C2C15F1F66661C004C4A82 /* DFCoverControlView.m in Sources */,
 				14CDD5411F653AA800D5FDED /* AppDelegate.m in Sources */,
+				61C2C1651F666ABC004C4A82 /* DFPortraitControlView.m in Sources */,
+				61C2C17A1F67BB4B004C4A82 /* UIColor+Hex.m in Sources */,
+				61C2C1811F6A2387004C4A82 /* DFPlayerStatusModel.m in Sources */,
 				14CDD5801F6555B500D5FDED /* DFMainNavViewController.m in Sources */,
 				14CDD5821F6555B500D5FDED /* DFPlayerViewController.m in Sources */,
+				61C2C16E1F666B73004C4A82 /* DFVideoPlayerView.m in Sources */,
 				14CDD5831F6555B500D5FDED /* DFSelfInfoViewController.m in Sources */,
+				61C2C17E1F6A235D004C4A82 /* DFPlayerModel.m in Sources */,
 				14CDD5811F6555B500D5FDED /* DFMainTabBarViewController.m in Sources */,
+				61C2C1711F666CFF004C4A82 /* MMMaterialDesignSpinner.m in Sources */,
 				14CDD57F1F6555B500D5FDED /* DFLiveListViewController.m in Sources */,
 				14CDD53E1F653AA800D5FDED /* main.m in Sources */,
+				61C2C16B1F666B3A004C4A82 /* DFPlayerControlView.m in Sources */,
+				61C2C1621F666816004C4A82 /* DFLoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +545,7 @@
 			baseConfigurationReference = 94FFBF165AF4A8A5C6D7C895 /* Pods-DFLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 769S6729K7;
+				DEVELOPMENT_TEAM = 485NBRU9KM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -461,7 +555,7 @@
 				INFOPLIST_FILE = DFLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.DFLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctrip.DFLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -471,7 +565,7 @@
 			baseConfigurationReference = E491054AD506631F2590C4B2 /* Pods-DFLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 769S6729K7;
+				DEVELOPMENT_TEAM = 485NBRU9KM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -481,7 +575,7 @@
 				INFOPLIST_FILE = DFLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.svendai.DFLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctrip.DFLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
