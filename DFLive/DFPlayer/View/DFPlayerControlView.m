@@ -207,7 +207,7 @@ static const CGFloat DFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 
 //强制设置是否显示了控制层
 -(void) setIsShowing:(BOOL)showing{
-    self.isShowing = showing;
+    self.showing = showing;
 }
 
 //开始准备播放
@@ -325,7 +325,7 @@ static const CGFloat DFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     if (forward) {
         self.fastImageView.image = [UIImage imageNamed:@"dis_live_forward"];
     }else{
-        self.fastImageView.image = [UIImage imageNamed:@"dis_live_forward"];
+        self.fastImageView.image = [UIImage imageNamed:@"dis_live_backward"];
     }
     
     self.fastView.hidden           = NO;

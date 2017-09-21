@@ -252,7 +252,7 @@
     
     [self.playOrPauseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.bottomToolView.mas_leading).offset(10);
-        make.centerX.equalTo(self.bottomToolView);
+        make.centerY.equalTo(self.bottomToolView);
         make.width.height.mas_equalTo(28);
     }];
     
@@ -289,7 +289,7 @@
 }
 
 #pragma mark - getter
-#warning - add picture resource
+//#warning - add picture resource
 -(UIButton*) backBtn{
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

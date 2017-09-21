@@ -344,7 +344,7 @@
     }];
     
     [self.openOrCloseBarrageBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.trailing.equalTo(self.openOrCloseBarrageBtn.mas_leading).offset(-4);
+        make.trailing.equalTo(self.sendBarrageBtn.mas_leading).offset(-10);
         make.centerY.equalTo(self.playOrPauseSmallBtn.mas_centerY);
         make.width.height.mas_equalTo(32.5);
     }];
@@ -352,7 +352,7 @@
     [self.totalTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(self.openOrCloseBarrageBtn.mas_leading).offset(-4);
         make.centerY.equalTo(self.playOrPauseSmallBtn.mas_centerY);
-        make.width.height.mas_equalTo(32.5);
+        make.width.height.mas_equalTo(48);
     }];
     
     [self.progressView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -379,7 +379,7 @@
     }];
 }
 #pragma mark - getter
-#warning - add picture res
+//#warning - add picture res
 -(UIView*) topToolView{
     if (!_topToolView) {
         _topToolView = [[UIView alloc]init];
@@ -493,7 +493,7 @@
     if (!_exitFullScreenBtn) {
         _exitFullScreenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_exitFullScreenBtn setImage:[UIImage imageNamed:@"dis_live_exitfull"] forState:UIControlStateNormal];
-        [_exitFullScreenBtn setImage:[UIImage imageNamed:@"dis_live_exitfull_h"] forState:UIControlStateHighlighted];
+        [_exitFullScreenBtn setImage:[UIImage imageNamed:@"dis_live_exitfull"] forState:UIControlStateHighlighted];
     }
     return _exitFullScreenBtn;
 }

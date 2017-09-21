@@ -47,7 +47,7 @@
         self.backImage = ({
             UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
             // imgView的image是亮度的那张图片.....
-            #warning - add res
+            //#warning - add res
             imgView.image        = [UIImage imageNamed:@"dis_live_brightness"];
             [self addSubview:imgView];
             imgView;

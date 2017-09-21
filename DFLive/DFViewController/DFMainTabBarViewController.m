@@ -10,6 +10,8 @@
 #import "DFMainNavViewController.h"
 #import "DFLiveListViewController.h"
 #import "DFSelfInfoViewController.h"
+#import "DFPlayerViewController.h"
+#import "DFPlayer.h"
 
 @interface DFMainTabBarViewController ()
 
@@ -59,14 +61,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 控制屏幕旋转
+//哪些页面支持转屏
+-(BOOL) shouldAutorotate{
+    UINavigationController *nav = self.viewControllers[self.selectedIndex];
+    
+    //播放页支持转屏
+    if ([nav.topViewController isKindOfClass:[DFPlayerViewController class]]) {
+        return  YES;
+    }
+    return NO;
 }
-*/
+//这些页面支持哪些转屏方向
+-(UIInterfaceOrientationMask) supportedInterfaceOrientations{
+    UINavigationController *nav = self.viewControllers[self.selectedIndex];
+    if ([nav.topViewController isKindOfClass:[DFPlayerViewController class]]) {
+        if ([DFBrightnessView sharedBrightnessView].isStartPlay) {
+            return UIInterfaceOrientationMaskAllButUpsideDown; //支持除了倒置以外的方向
+        }else{
+            return UIInterfaceOrientationMaskPortrait;
+        }
+        
+    }
+    //其他界面 竖屏
+    return  UIInterfaceOrientationMaskPortrait;
+}
+//默认屏幕方向(通过present出来的界面）
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return UIInterfaceOrientationPortrait;
+}
 
 @end

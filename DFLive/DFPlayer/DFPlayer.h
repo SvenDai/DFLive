@@ -15,3 +15,8 @@
 #define SCREEN_MAX_LENGTH (MAX(DF_SCREEN_WIDTH, DF_SCREEN_HEIGHT))
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_4  (IS_IPHONE && SCREEN_MAX_LENGTH == 480.0)
+
+#import "DFPlayerVideoPlayer.h"
+#import "DFPlayerModel.h"
+#import "DFPlayerStatusModel.h"
+#import "DFBrightnessView.h"

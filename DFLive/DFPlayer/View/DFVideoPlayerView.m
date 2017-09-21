@@ -110,13 +110,13 @@ typedef NS_ENUM(NSInteger, PanDirection) {
 -(void) setOrientationPortraitConstraint{
     self.playerStatusModel.fullScreen = NO;
     
-    [UIApplication sharedApplication].statusBarHidden = YES;
+    [UIApplication sharedApplication].statusBarHidden = NO;
     
     if (self.playerStatusModel.playDidEnd) {
         [self.playerControlView playEndHideControlView];
     }
     //如果正在显示控制栏，屏幕切换时就显示
-    if (self.playerControlView.isShowing) {
+    if (self.playerControlView.showing) {
         [self.playerControlView setIsShowing:NO];
         //显示控制层
         [self.playerControlView showControl];
@@ -407,7 +407,7 @@ typedef NS_ENUM(NSInteger, PanDirection) {
         [self removeFromSuperview];
     }
     
-    [self.superview addSubview:self];
+    [superView addSubview:self];
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.leading.bottom.trailing.mas_equalTo(superView);
     }];

@@ -88,7 +88,7 @@
         make.top.equalTo(self.mas_top).offset(2);
         make.trailing.equalTo(self.mas_trailing).offset(-5);
         make.width.offset(52);
-        make.width.offset(42);
+        make.height.offset(42);
     }];
     
     [self.activity mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -101,7 +101,7 @@
 -(UIButton*) backBtn{
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        #warning add res
+        //#warning add res
         [_backBtn setImage:[UIImage imageNamed:@"dis_live_back"] forState:UIControlStateNormal];
     }
     return _backBtn;
@@ -110,7 +110,7 @@
 -(UIButton*) shareBtn{
     if (!_shareBtn) {
         _shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        #warning add res
+        //#warning add res
         [_shareBtn setImage:[UIImage imageNamed:@"dis_live_share"] forState:UIControlStateNormal];
     }
     return _shareBtn;

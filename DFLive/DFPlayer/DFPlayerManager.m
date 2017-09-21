@@ -147,7 +147,7 @@
                                                  name:IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification
                                                object:_player];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(loadStateDidChange:)
+                                             selector:@selector(moviePlayBackStateDidChange:)
                                                  name:IJKMPMoviePlayerPlaybackStateDidChangeNotification
                                                object:_player];
 }

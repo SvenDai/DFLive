@@ -185,8 +185,8 @@
             break;
             
             case DFPlayerStatePause:{
-                [self.videoPlayerView.playerControlView.portraitControlView syncPlayPauseButton:YES];
-                [self.videoPlayerView.playerControlView.landScapeControlView syncPlayPauseButton:YES];
+                [self.videoPlayerView.playerControlView.portraitControlView syncPlayPauseButton:NO];
+                [self.videoPlayerView.playerControlView.landScapeControlView syncPlayPauseButton:NO];
                 self.isPauseByUser = YES;
             }
             break;
@@ -254,6 +254,8 @@
 -(void) playerReadyToPlay{
     [self.videoPlayerView startReadyToPlay];
     self.videoPlayerView.loadingView.hidden = YES;
+    
+    [DFBrightnessView sharedBrightnessView].isStartPlay = YES;
 }
 #pragma mark - DFVideoPlayerViewDelegate
 -(void) doubleTapAction{

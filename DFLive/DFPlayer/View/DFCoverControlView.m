@@ -126,7 +126,7 @@
 -(UIButton*) backBtn{
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        #warning add res
+        //#warning add res
         [_backBtn setImage:[UIImage imageNamed:@"dis_live_back"] forState:UIControlStateNormal];
     }
     return _backBtn;
@@ -135,7 +135,7 @@
 -(UIButton*) shareBtn{
     if (!_shareBtn) {
         _shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        #warning add res
+        //#warning add res
         [_shareBtn setImage:[UIImage imageNamed:@"dis_live_share"] forState:UIControlStateNormal];
     }
     return _shareBtn;
@@ -144,7 +144,7 @@
 -(UIImageView*) playerImageView{
     if (!_playerImageView) {
         _playerImageView = [[UIImageView alloc]init];
-        #warning add res
+        //#warning add res
         _playerImageView.image = [UIImage imageNamed:@"dis_live_playlogo"];
         _playerImageView.contentMode = UIViewContentModeCenter;
     }
