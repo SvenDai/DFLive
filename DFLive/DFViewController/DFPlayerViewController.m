@@ -52,8 +52,8 @@
     [self setPlayerViewContraints];
     
     DFPlayerModel *model = [[DFPlayerModel alloc]init];
-    model.videoURL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/1456231710844S(24).mp4"];
-    //model.videoURL = [NSURL URLWithString:@"http://video.c-ctrip.com/live/daifeng.m3u8"];
+    //model.videoURL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/1456231710844S(24).mp4"];
+    model.videoURL = [NSURL URLWithString:@"http://video.c-ctrip.com/live/daifeng.m3u8"];
     DFPlayerVideoPlayer *player = [DFPlayerVideoPlayer videoPlayerWithView:self.playerFatherView delegate:self playerModel:model];
     self.player = player;
     

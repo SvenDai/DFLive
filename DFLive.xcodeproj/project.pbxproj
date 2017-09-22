@@ -46,6 +46,7 @@
 		61C2C1841F70BA2A004C4A82 /* DFBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1831F70BA2A004C4A82 /* DFBrightnessView.m */; };
 		61C2C1871F70E838004C4A82 /* DFPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1861F70E838004C4A82 /* DFPlayerManager.m */; };
 		61C2C18A1F713003004C4A82 /* DFPlayerVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1891F713003004C4A82 /* DFPlayerVideoPlayer.m */; };
+		61C2C18E1F74F9C7004C4A82 /* DFLiveListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C18D1F74F9C7004C4A82 /* DFLiveListTableViewCell.m */; };
 		9CC5F74BBC3ABE60542678A2 /* Pods_DFLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,8 @@
 		61C2C1861F70E838004C4A82 /* DFPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPlayerManager.m; sourceTree = "<group>"; };
 		61C2C1881F713003004C4A82 /* DFPlayerVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPlayerVideoPlayer.h; sourceTree = "<group>"; };
 		61C2C1891F713003004C4A82 /* DFPlayerVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFPlayerVideoPlayer.m; sourceTree = "<group>"; };
+		61C2C18C1F74F9C7004C4A82 /* DFLiveListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLiveListTableViewCell.h; sourceTree = "<group>"; };
+		61C2C18D1F74F9C7004C4A82 /* DFLiveListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLiveListTableViewCell.m; sourceTree = "<group>"; };
 		94FFBF165AF4A8A5C6D7C895 /* Pods-DFLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.debug.xcconfig"; sourceTree = "<group>"; };
 		C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E491054AD506631F2590C4B2 /* Pods-DFLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 		14CDD53B1F653AA800D5FDED /* DFLive */ = {
 			isa = PBXGroup;
 			children = (
+				61C2C18B1F74F987004C4A82 /* DFPlayerViewCell */,
 				61C2C15B1F66661C004C4A82 /* DFPlayer */,
 				14CDD5741F6555B500D5FDED /* DFViewController */,
 				14CDD53F1F653AA800D5FDED /* AppDelegate.h */,
@@ -295,6 +299,15 @@
 				61C2C1801F6A2387004C4A82 /* DFPlayerStatusModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		61C2C18B1F74F987004C4A82 /* DFPlayerViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				61C2C18C1F74F9C7004C4A82 /* DFLiveListTableViewCell.h */,
+				61C2C18D1F74F9C7004C4A82 /* DFLiveListTableViewCell.m */,
+			);
+			path = DFPlayerViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +450,7 @@
 				61C2C17E1F6A235D004C4A82 /* DFPlayerModel.m in Sources */,
 				14CDD5811F6555B500D5FDED /* DFMainTabBarViewController.m in Sources */,
 				61C2C1711F666CFF004C4A82 /* MMMaterialDesignSpinner.m in Sources */,
+				61C2C18E1F74F9C7004C4A82 /* DFLiveListTableViewCell.m in Sources */,
 				14CDD57F1F6555B500D5FDED /* DFLiveListViewController.m in Sources */,
 				14CDD53E1F653AA800D5FDED /* main.m in Sources */,
 				61C2C16B1F666B3A004C4A82 /* DFPlayerControlView.m in Sources */,

@@ -326,7 +326,7 @@
     }];
     
     [self.currentTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.playOrPauseSmallBtn.mas_leading).offset(4);
+        make.leading.equalTo(self.playOrPauseSmallBtn.mas_trailing).offset(4);
         make.centerY.equalTo(self.playOrPauseSmallBtn.mas_centerY);
         make.width.mas_equalTo(48);
     }];
@@ -364,6 +364,7 @@
     [self.videoSlider mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.currentTimeLabel.mas_trailing).offset(9);
         make.trailing.equalTo(self.totalTimeLabel.mas_leading).offset(-9);
+        make.centerY.equalTo(self.playOrPauseSmallBtn.mas_centerY).offset(-1);
         make.height.mas_equalTo(30);
     }];
     
@@ -425,8 +426,8 @@
 -(UIButton*) playOrPauseSmallBtn{
     if (!_playOrPauseSmallBtn) {
         _playOrPauseSmallBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_playOrPauseSmallBtn setImage:[UIImage imageNamed:@"dis_live_play_s"] forState:UIControlStateNormal];
-        [_playOrPauseSmallBtn setImage:[UIImage imageNamed:@"dis_live_pause_s"] forState:UIControlStateSelected];
+        [_playOrPauseSmallBtn setImage:[UIImage imageNamed:@"dis_live_play_btn"] forState:UIControlStateNormal];
+        [_playOrPauseSmallBtn setImage:[UIImage imageNamed:@"dis_live_pause_btn"] forState:UIControlStateSelected];
     }
     return _playOrPauseSmallBtn;
 }

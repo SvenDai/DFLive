@@ -251,13 +251,13 @@ typedef NS_ENUM(NSInteger, PanDirection) {
             }
             case UIGestureRecognizerStateChanged:{//正在移动
                 switch (self.panDirection) {
-                        case PanDirectionVerticalMoved:{
+                        case PanDirectionHorizontalMoved:{
                             if ([self.delegate respondsToSelector:@selector(panHorizontalMoving:)]) {
                                 [self.delegate panHorizontalMoving:veloctiPoint.x];
                             }
                             break;
                         }
-                        case PanDirectionHorizontalMoved:{
+                        case PanDirectionVerticalMoved:{
                             [self verticalMoved:veloctiPoint.y]; //垂直方向只要y方向的值
                             break;
                         }
@@ -297,9 +297,9 @@ typedef NS_ENUM(NSInteger, PanDirection) {
     if (self.isVolume) {
         if ([self.delegate respondsToSelector:@selector(volumeValueChange:)]) {
             [self.delegate volumeValueChange:value];
-        }else{
-            ([UIScreen mainScreen].brightness -= value / 10000);
         }
+    }else{
+        ([UIScreen mainScreen].brightness -= value / 10000);
     }
 }
 
