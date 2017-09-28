@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationBar.backgroundColor = [UIColor redColor];
+    //self.navigationBarHidden = YES;
     self.popDelegate = self.interactivePopGestureRecognizer.delegate;
     
     self.delegate = self;

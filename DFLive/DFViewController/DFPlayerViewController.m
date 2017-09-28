@@ -52,8 +52,12 @@
     [self setPlayerViewContraints];
     
     DFPlayerModel *model = [[DFPlayerModel alloc]init];
-    //model.videoURL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/1456231710844S(24).mp4"];
-    model.videoURL = [NSURL URLWithString:@"http://video.c-ctrip.com/live/daifeng.m3u8"];
+    //model.videoURL = [NSURL URLWithString:@"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8"];
+
+    //model.videoURL = [NSURL URLWithString:@"http://video.c-ctrip.com/live/daifeng.m3u8"];
+    model.videoURL = [NSURL URLWithString:@"http://video.c-ctrip.com/live/fdai.m3u8"];
+    //model.videoURL = [NSURL URLWithString:@"http://video.c-ctrip.com/live/zwh.m3u8"];
+    //model.videoURL = [NSURL URLWithString:@"http://114.80.149.151/sports.tc.qq.com/ArA5P8J2qNqrjOyT8tYGrF3N-DYNQIHdu564E4PCms6Q/l0024w4ryad.mp4?sdtfrom=v3010&guid=cd98485e4c15a650b745e8a046102da8&vkey=C0F025888DF55CABD714C71FD0CCFA556DF8BA22F16F44A6E13352A39668F76E300D196D2479253B4DF214FB86A228ADB0FEBA72C8029DE852D030D957493FA034F8C653E756F8D66C71961B0F3CBAF5B307C12BC6EE9AC6&platform=2"];
     DFPlayerVideoPlayer *player = [DFPlayerVideoPlayer videoPlayerWithView:self.playerFatherView delegate:self playerModel:model];
     self.player = player;
     
