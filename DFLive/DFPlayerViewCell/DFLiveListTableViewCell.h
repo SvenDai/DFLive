@@ -23,6 +23,8 @@
 
 @property(nonatomic,strong) UIView      *topView;
 
+@property(nonatomic,strong) UIButton    *videoStateBtn;
+
 @property(nonatomic,strong) UIButton    *playBtn;
 
 @property(nonatomic,strong) UILabel     *videoLabel;
@@ -36,7 +38,5 @@
 @property(nonatomic,strong) UIButton    *viewerNum;
 
 @property(nonatomic,strong) UILabel     *timeLabel;
-
--(void) insertTransparentGradient:(UIView*)view;
 
 @end

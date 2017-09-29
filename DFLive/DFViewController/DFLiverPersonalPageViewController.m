@@ -29,7 +29,7 @@ static NSString *liverHistoryVideoCellId  = @"LIVERHISTORYVIDEOCELLID";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupUI];
-    [self.liverInfoView.liverHeadImage sd_setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"dis_live_pause"]];
+    [self.liverInfoView.liverHeadImage sd_setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"dis_about_me"]];
     self.liverInfoView.liverNameLabel.text = @"张三";
     
 }

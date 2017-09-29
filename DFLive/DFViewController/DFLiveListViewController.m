@@ -105,8 +105,6 @@ static NSString *liveCellId = @"LIVECELLID";
     
     cell.timeLabel.text = @"今天 15:00";
     
-    [cell insertTransparentGradient:cell.bottomView];
-    
     return cell;
 }
 

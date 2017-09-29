@@ -8,6 +8,7 @@
 
 #import "DFLiveListTableViewCell.h"
 #import "UIColor+Hex.h"
+#import "DFPlayer.h"
 
 
 @interface DFLiveListTableViewCell ()
@@ -31,6 +32,7 @@
     
     [self.liveCoverImageView addSubview:self.topView];
     [self.topView addSubview:self.titleLabel];
+    [self.topView addSubview:self.videoStateBtn];
     
     [self.liveCoverImageView addSubview:self.playBtn];
     
@@ -45,7 +47,9 @@
     
     [self setSubViewConstraints];
     [self setSubViewAction];
-    //[self insertTransparentGradient:self.bottomView];
+    
+    [self insertTransparentGradient:self.bottomView withStartPoint:CGPointMake(0.5, 0) andEndPoint:CGPointMake(0.5, 1)];
+    [self insertTransparentGradient:self.topView withStartPoint:CGPointMake(0.5, 1) andEndPoint:CGPointMake(0.5, 0)];
 }
 
 - (void)awakeFromNib {
@@ -91,7 +95,7 @@
     
     [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.top.trailing.equalTo(self.liveCoverImageView);
-        make.height.mas_equalTo(30.0);
+        make.height.mas_equalTo(50.0);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -99,34 +103,41 @@
         make.top.bottom.trailing.equalTo(self.topView);
     }];
     
+    [self.videoStateBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.trailing.mas_equalTo(-5.0);
+        make.centerY.equalTo(self.topView.mas_centerY);
+        make.height.mas_equalTo(15);
+        make.width.mas_equalTo(60);
+    }];
+    
     [self.bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.bottom.trailing.equalTo(self.liveCoverImageView);
-        make.height.mas_equalTo(30.0);
+        make.height.mas_equalTo(50.0);
     }];
     
     [self.videoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.bottomView.mas_centerY);
+        make.centerY.equalTo(self.bottomView.mas_centerY).offset(10);
         make.leading.mas_equalTo(5.0);
         make.height.mas_equalTo(20.0);
         make.width.mas_equalTo(50.0);
     }];
     
     [self.liverName mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.bottomView.mas_centerY);
+        make.centerY.equalTo(self.bottomView.mas_centerY).offset(10);
         make.leading.equalTo(self.videoLabel.mas_trailing).offset(10);
         make.height.mas_equalTo(30.0);
         make.width.mas_equalTo(65.0);
     }];
     
     [self.viewerNum mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.bottomView.mas_centerY);
+        make.centerY.equalTo(self.bottomView.mas_centerY).offset(10);
         make.leading.equalTo(self.liverName.mas_trailing).offset(5);
         make.height.mas_equalTo(30.0);
         make.width.mas_equalTo(65.0);
     }];
     
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.bottomView.mas_centerY);
+        make.centerY.equalTo(self.bottomView.mas_centerY).offset(10);
         make.trailing.equalTo(self.bottomView.mas_trailing).offset(-5);
         make.height.mas_equalTo(20.0);
         make.width.mas_equalTo(100.0);
@@ -135,18 +146,15 @@
 }
 
 #pragma mark - color confige
-- (void) insertTransparentGradient:(UIView*)view {
+- (void) insertTransparentGradient:(UIView*)view withStartPoint:(CGPoint)sPoint andEndPoint:(CGPoint)ePoint{
     
     //crate gradient layer
     CAGradientLayer *headerLayer = [CAGradientLayer layer];
-    headerLayer.frame = view.bounds;
-    DebugLog(@"DDDD %f",view.bounds.size.width);
-    headerLayer.colors = @[(id)[[UIColor clearColor] colorWithAlphaComponent:0.0f].CGColor,
-                             (id)[[UIColor redColor] colorWithAlphaComponent:1.0f].CGColor];
-    //headerLayer.locations = @[[NSNumber numberWithFloat:0.0f],
-    //                            [NSNumber numberWithFloat:1.0f]];
-    headerLayer.startPoint = CGPointMake(0, 0.5);
-    headerLayer.endPoint = CGPointMake(1, 0.5);
+    headerLayer.frame   = CGRectMake(0, 0, DF_SCREEN_WIDTH-2, 50);
+    headerLayer.colors  = @[(id)[[UIColor clearColor] colorWithAlphaComponent:0.0f].CGColor,
+                            (id)[[UIColor blackColor] colorWithAlphaComponent:0.5f].CGColor];
+    headerLayer.startPoint  = sPoint;
+    headerLayer.endPoint    = ePoint;
     [view.layer addSublayer:headerLayer];
 }
 
@@ -155,6 +163,9 @@
     if (!_liveCoverImageView) {
         _liveCoverImageView = [[UIImageView alloc]init];
         _liveCoverImageView.userInteractionEnabled = YES;
+        //_liveCoverImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _liveCoverImageView.contentMode =UIViewContentModeScaleAspectFill;
+        _liveCoverImageView.clipsToBounds = YES;
     }
     return _liveCoverImageView;
 }
@@ -162,9 +173,30 @@
 -(UIView*) topView{
     if (!_topView) {
         _topView = [[UIView alloc]init];
-        _topView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
+        //_topView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
     }
     return _topView;
+}
+
+-(UIButton*) videoStateBtn{
+    if (!_videoStateBtn) {
+        _videoStateBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _videoStateBtn.backgroundColor      = [UIColor redColor];
+        _videoStateBtn.titleLabel.textColor = [UIColor whiteColor];
+        _videoStateBtn.titleLabel.font      = [UIFont systemFontOfSize:10];
+        [_videoStateBtn setTitle:@"直播中" forState:UIControlStateNormal];
+        
+        _videoStateBtn.layer.cornerRadius   = 8;
+        _videoStateBtn.layer.masksToBounds  = YES;
+
+        _videoStateBtn.titleLabel.frame = CGRectMake(0, 0, 30, 15);
+        _videoStateBtn.imageView.frame  = CGRectMake(0, 0, 5, 5);
+        
+        _videoStateBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -5);
+        _videoStateBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 5);
+        [_videoStateBtn setImage:[UIImage imageNamed:@"dis_llist_livelogo"] forState:UIControlStateNormal];
+    }
+    return _videoStateBtn;
 }
 
 -(UIButton*) playBtn{
@@ -181,7 +213,7 @@
     if (!_videoLabel) {
         _videoLabel = [[UILabel alloc] init];
         [_videoLabel setTextColor:[UIColor whiteColor]];
-        _videoLabel.font = [UIFont systemFontOfSize:12];
+        _videoLabel.font = [UIFont systemFontOfSize:14];
     }
     return _videoLabel;
 }
@@ -199,7 +231,6 @@
     if (!_bottomView) {
         _bottomView = [[UIView alloc] init];
         //_bottomView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
-        //[self insertTransparentGradient:_bottomView];
     }
     return _bottomView;
 }
@@ -208,7 +239,7 @@
     if (!_liverName) {
         _liverName = [UIButton buttonWithType:UIButtonTypeCustom];
         _liverName.titleLabel.textColor = [UIColor whiteColor];
-        _liverName.titleLabel.font      = [UIFont systemFontOfSize:12];
+        _liverName.titleLabel.font      = [UIFont systemFontOfSize:14];
         
         [_liverName setImage:[UIImage imageNamed:@"dis_llist_livelogo"] forState:UIControlStateNormal];
         
@@ -226,7 +257,7 @@
     if (!_viewerNum) {
         _viewerNum = [UIButton buttonWithType:UIButtonTypeCustom];
         [_viewerNum setTitleColor: [UIColor colorWithHexString:@"0xFED946"] forState:UIControlStateNormal];
-        _viewerNum.titleLabel.font = [UIFont systemFontOfSize:12];
+        _viewerNum.titleLabel.font = [UIFont systemFontOfSize:14];
         
         [_viewerNum setImage:[UIImage imageNamed:@"dis_llist_viewerlogo"] forState:UIControlStateNormal];
         
@@ -245,7 +276,7 @@
         [_timeLabel setTextColor:[UIColor whiteColor]];
         
         _timeLabel.textAlignment    = NSTextAlignmentRight;
-        _timeLabel.font             = [UIFont systemFontOfSize:12];
+        _timeLabel.font             = [UIFont systemFontOfSize:14];
     }
     return _timeLabel;
 }
