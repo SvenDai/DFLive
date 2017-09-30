@@ -15,6 +15,8 @@
 
 @property(nonatomic,strong) UIView *splitLine;
 
+@property(nonatomic,weak) NSTimer *liveTimer;
+
 @end
 
 @implementation DFLiveListTableViewCell
@@ -22,8 +24,27 @@
 -(instancetype) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupUI];
+        [self setupTimer];
     }
     return self;
+}
+
+-(void) dealloc{
+    DebugLog(@"ui table view cell dealloc");
+    [self.liveTimer invalidate];
+    self.liveTimer = nil;
+}
+
+-(void) setupTimer{
+    self.liveTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+}
+
+-(void) timerAction{
+    if (self.videoStateBtn.imageView.isHidden) {
+        self.videoStateBtn.imageView.hidden = NO;
+    }else{
+        self.videoStateBtn.imageView.hidden = YES;
+    }
 }
 
 -(void) setupUI{
@@ -191,6 +212,7 @@
 
         _videoStateBtn.titleLabel.frame = CGRectMake(0, 0, 30, 15);
         _videoStateBtn.imageView.frame  = CGRectMake(0, 0, 5, 5);
+        
         
         _videoStateBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -5);
         _videoStateBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 5);

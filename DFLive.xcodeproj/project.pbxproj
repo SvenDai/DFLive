@@ -51,6 +51,7 @@
 		61C2C1971F791C6E004C4A82 /* DFLiverPersonalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1961F791C6E004C4A82 /* DFLiverPersonalPageViewController.m */; };
 		61C2C19A1F7A2BD3004C4A82 /* DFLiverRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C1991F7A2BD3004C4A82 /* DFLiverRegisterViewController.m */; };
 		61C2C19D1F7A2D3B004C4A82 /* DFLiverRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C19C1F7A2D3B004C4A82 /* DFLiverRegisterView.m */; };
+		61C2C2111F7F9014004C4A82 /* DFLiveDetailInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C2C2101F7F9014004C4A82 /* DFLiveDetailInfoView.m */; };
 		9CC5F74BBC3ABE60542678A2 /* Pods_DFLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,8 @@
 		61C2C1991F7A2BD3004C4A82 /* DFLiverRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLiverRegisterViewController.m; sourceTree = "<group>"; };
 		61C2C19B1F7A2D3B004C4A82 /* DFLiverRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLiverRegisterView.h; sourceTree = "<group>"; };
 		61C2C19C1F7A2D3B004C4A82 /* DFLiverRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLiverRegisterView.m; sourceTree = "<group>"; };
+		61C2C20F1F7F9014004C4A82 /* DFLiveDetailInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLiveDetailInfoView.h; sourceTree = "<group>"; };
+		61C2C2101F7F9014004C4A82 /* DFLiveDetailInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLiveDetailInfoView.m; sourceTree = "<group>"; };
 		94FFBF165AF4A8A5C6D7C895 /* Pods-DFLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.debug.xcconfig"; sourceTree = "<group>"; };
 		C09AB092FA0F8AAC5C14AC84 /* Pods_DFLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E491054AD506631F2590C4B2 /* Pods-DFLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFLive/Pods-DFLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +337,8 @@
 				61C2C1931F790B61004C4A82 /* DFLiverPageView.m */,
 				61C2C19B1F7A2D3B004C4A82 /* DFLiverRegisterView.h */,
 				61C2C19C1F7A2D3B004C4A82 /* DFLiverRegisterView.m */,
+				61C2C20F1F7F9014004C4A82 /* DFLiveDetailInfoView.h */,
+				61C2C2101F7F9014004C4A82 /* DFLiveDetailInfoView.m */,
 			);
 			path = DFPlayerInfoView;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				61C2C19D1F7A2D3B004C4A82 /* DFLiverRegisterView.m in Sources */,
 				61C2C1941F790B61004C4A82 /* DFLiverPageView.m in Sources */,
 				61C2C1681F666B11004C4A82 /* DFLandScapeControlView.m in Sources */,
+				61C2C2111F7F9014004C4A82 /* DFLiveDetailInfoView.m in Sources */,
 				61C2C1841F70BA2A004C4A82 /* DFBrightnessView.m in Sources */,
 				14CDD5441F653AA800D5FDED /* ViewController.m in Sources */,
 				61C2C15F1F66661C004C4A82 /* DFCoverControlView.m in Sources */,

@@ -68,7 +68,7 @@ static NSString *liveCellId = @"LIVECELLID";
     if (!_myLivePageBtn) {
         _myLivePageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         
-        [_myLivePageBtn setImage:[UIImage imageNamed:@"dis_live_listplay"] forState:UIControlStateNormal];
+        [_myLivePageBtn setImage:[UIImage imageNamed:@"dis_live_myvideo"] forState:UIControlStateNormal];
         [_myLivePageBtn addTarget:self action:@selector(myLivePageBtnClickAction:) forControlEvents:UIControlEventTouchUpInside];
         
         _myLivePageBtn.backgroundColor     = [UIColor colorWithHexString:@"0x000000" alpha:0.3];
